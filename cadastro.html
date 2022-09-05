@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Componentes</title>
     <link rel="stylesheet" href="main.css">
-    <title>Entrar</title>
 </head>
 <body>
     <header>
         <p>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
         <button><a href="index.html">Sair</a></button>
     </header>
-
-    <form action="painelDeControle.html">
-        <h2>Entre com o seu usuário:</h2>
-        <input type="text" placeholder="Usuário" required autofocus>
-        <input type="password" placeholder="Senha" required>
-        <button>Entrar</button>
+    <nav>
+        <a href="painelDeControle.html">Início</a>
+        <a href="historico.html">Histórico</a>
+        <a href="cadastro.html">Cadastrar Componentes</a>
+    </nav>
+    
+    <h2>Cadastro de Componentes</h2>
+    <form action="index.html">
+        <input type="text" placeholder="Nome" required autofocus>
+        <input type="time" placeholder="Horas">
+        <input type="date" placeholder="Data">
+        <input type="email" placeholder="Email do responsável">
+        <input type="tel" placeholder="Telefone do responsável">
+        <button>Cadastrar</button>
     </form>
     
     <footer>
