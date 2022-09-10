@@ -5,44 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <title>Novo Sigaa</title>
 </head>
 <body>
     <header>
         <p>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
-        <button><a href="index.html">Sair</a></button>
+        <button><a class="sair" href="index.html">Sair</a></button>
     </header>
 
         <nav>
+        
             <a href="painelDeControle.html">Início</a>
-            <a href="historico.html">Histórico</a>
+            <a href="historico.html">Histórico</a></li>
             <a href="cadastro.html">Cadastrar Componentes</a>
+        
         </nav>
         
-        <img src="yan.jpeg" alt="foto de perfil">
-        <p>Nome: Yan Lucas Franca Arcanjo</p>
-        <p>E-mail: arcanjoyan21@gmail.com</p>
-        <p>IRA: 8.0854</p>
-        <p>Créditos Cursados: 1800h</p>
-        <input type="color">
-        <ul>
-            <li>ENGENHARIA DE SOFTWARE</li>
-            <li>HIGIENE INDUSTRIAL E SEGURANÇA NO TRABALHO</li>
-            <li>INTELIGÊNCIA COMPUTACIONAL</li>
-            <li>SISTEMAS OPERACIONAIS</li>
-            <li>TECNOLOGIAS WEB</li>
-        </ul>
+        <main>
+            <section class="lado_direito">
+                <img class="imgProfile" src="yan.jpeg" alt="foto de perfil">
+                <details>
+                    <summary>YAN LUCAS FRANCA ARCANJO</summary>
+                    <p>IRA: 8.6</p>
+                    <p>ARCANJOYAN21@ALU.UFC.BR</p>
+                    <p>5555 CRÉDITOS CURSADOS</p>
+                  </details>
 
+                  <style>
+                    details > summary {
+                      width: 250px;
+                      border: none;
+                      box-shadow: 1px 1px 2px #bbbbbb;
+                      cursor: pointer;
+                    }
+                    details > p {
+                      padding: 4px;
+                      margin: 0;
+                      box-shadow: 1px 1px 2px #bbbbbb;
+                    }
+                    </style>  
+            </section>
+            <section class="lado_esquerdo">
+                <ul>
+                    <li>ENGENHARIA DE SOFTWARE</li>
+                    <li>HIGIENE INDUSTRIAL E SEGURANÇA NO TRABALHO</li>
+                    <li>INTELIGÊNCIA COMPUTACIONAL</li>
+                    <li>SISTEMAS OPERACIONAIS</li>
+                    <li>TECNOLOGIAS WEB</li>
+                </ul>
+            </section>
+        </main>
+
+        <section class="section_progresso">
             <br><label for="obrigatorias">Disciplinas Obrigatórias</label>
-            <progress id="obrigatorias" value="1520" max="2952"></progress>
+            <progress class="progresso" id="obrigatorias" value="1520" max="2952"></progress>
             <br><label for="eletivas">Disciplinas Eletivas</label>
-            <progress id="eletivas" value="160" max="896"></progress>
+            <progress class="progresso" id="eletivas" value="160" max="896"></progress>
             <br><label for="estagio">Estágio Obrigatório</label>
-            <progress id="estagio" value="0" max="192"></progress>
+            <progress class="progresso" id="estagio" value="0" max="192"></progress>
             <br><label for="comp">Horas Complementares</label>
-            <progress id="comp" value="0" max="176"></progress>
+            <progress class="progresso" id="comp" value="0" max="176"></progress>
             <br><label for="comp">Extensao</label>
-            <progress id="comp" value="0" max="176"></progress>  
+            <progress class="progresso" id="comp" value="0" max="176"></progress>  
+        </section>    
 
 
         <footer>

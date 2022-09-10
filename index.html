@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Entrar</title>
 </head>
-<body>
-    <header>
-        <p>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</p>
-        <button><a href="index.html">Sair</a></button>
-    </header>
-
-    <form action="painelDeControle.html">
-        <h2>Entre com o seu usuário:</h2>
-        <input type="text" placeholder="Usuário" required autofocus>
-        <input type="password" placeholder="Senha" required>
-        <button>Entrar</button>
-    </form>
-    
-    <footer>
-        <footer>
-            <p>SIGAA|Copyright 2010-2022 - Superintendencia da Tecnologia da Informação - UFC - (85) 22365-5697</p>
-        </footer>
-    </footer>
+<body corpo__login>
+    <form class="login" action="painelDeControle.html">
+      <h1>Entre no Novo Sigaa!</h1>
+      <img class="login__pic" src="profpic.png" alt="">
+        <div>
+          <label for="exampleInputEmail1">Usuário</label>
+          <input placeholder="seu usuário" id="exampleInputEmail1" type="text" required minlength="5">
+        </div>
+        <div>
+          <label for="exampleInputPassword1">Senha</label>
+          <input placeholder="sua senha" type="password" id="exampleInputPassword1" required minlength="8">
+        </div>
+        <a class="subForm" href="#">Esqueceu sua senha?</a>
+        <button type="submit">Entrar</button>
+        <a class="login__cadastro" href="#">Faça seu cadastro</a>
+      </form>
 </body>
 </html>
